@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PasswordGenerator</title>
+    <script src="https://kit.fontawesome.com/76de512f75.js" crossorigin="anonymous"></script>
+    
+  <link rel="stylesheet" href="/assets/index-dafb6d38.css">
+</head>
+<body>
+    <div id="home" class="flex flex-row justify-center items-center h-screen bg-custom-black">
+    
+        <div class="flex flex-col gap-5 text-white">
+<h1 class=" flex wrap flex-row    justify-center wrap  text-center  font-bold text-[2.5rem] p-3 bttm   border-b-[0.35rem] border-white  rounded-lg">Password Generator</h1>
+
+<div class="flex flex-row gap-1 justify-between bg-red-500 p-3 border-b-[0.35rem] border-purple-700 rounded-lg">
+    <input type="text" name="" id="pass" placeholder="Password" readonly finput class="text-green-600 bg-red-500 text-[1.5rem] rounded-lg font-bold ">
+
+    <button>
+        <span popup class="opacity-0"></span>
+        <i class="fa-solid fa-copy hover:text-violet-700"></i>
+    </button>
+</div>
+<!-- password Length -->
+<div class="second-section bg-red-500 flex flex-col p-4 border-b-[0.35rem] border-purple-700 rounded-lg">
+   <div class="length-section flex flex-row justify-between">  
+    <div class="text-blue-500 font-bold text-[1.5rem]">Password Length</div>
+    <div class="len font-bold text-[1.5rem]" >0</div>
+   </div>
+
+
+<input type="range" name="range" id="rng" min="0" max="20" class="sld " step="1" >
+
+<!-- checkboxes -->
+<div>
+<div class="flex   flex-row  my-[1rem] mx-0 gap-y-0 gap-x-[1rem] check items-center">
+    <input type="checkbox" id="upper">
+    <label for="upper">Includes Uppercase Letter</label>
+</div>
+
+<div class="flex   flex-row  my-[1rem] mx-0 gap-y-0 gap-x-[1rem] check items-center"> 
+    <input type="checkbox" id="lower">
+    <label for="lower">Includes Lowercase Letter</label>
+</div>
+
+<div class="flex   flex-row  my-[1rem] mx-0 gap-y-0 gap-x-[1rem] check items-center">
+    <input type="checkbox" id="number">
+    <label for="number">Includes Numbers</label>
+</div>
+
+<div class="flex   flex-row  my-[1rem] mx-0 gap-y-0 gap-x-[1rem] check items-center">
+    <input type="checkbox" id="symbol">
+    <label for="symbol">Includes Symbol</label>
+</div>
+</div>
+
+
+
+
+
+
+<!--  Strenght section -->
+<div class="flex flex-row justify-between p-4 font-bold">
+   <p>Strength</p>
+   <div id="ind" class="w-[1.5rem] h-[1.5rem] rounded-[50%] opacity-100 bg-opacity-100"></div>
+</div>
+<button class="stnth text-yellow-500 font-bold bg-violet-600 rounded-lg p-4 border-b-[0.35rem] border-yellow-500">
+    GENETATOR PASSWORD
+</button>
+
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
